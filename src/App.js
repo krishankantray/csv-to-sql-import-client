@@ -32,7 +32,7 @@ class App extends Component {
 
     let d = JSON.stringify({ ...data });
 
-    fetch("http://csv-to-sql-import.herokuapp.com/bulkcreate", {
+    fetch("https://csv-to-sql-import.herokuapp.com/bulkcreate", {
       method: "POST",
       headers: {
         Accept: "application/json",
@@ -66,7 +66,7 @@ class App extends Component {
   loadClickHandler = () => {
     //
     this.setState({loading:true});
-    fetch("http://csv-to-sql-import.herokuapp.com/customers")
+    fetch("https://csv-to-sql-import.herokuapp.com/customers")
       .then((response) => {
         if (response.ok) {
           this.setState({loading:false});
@@ -94,7 +94,7 @@ deleteClickHandler = ()=>{
   this.setState({ loaded: false });
 
 
-  fetch("http://csv-to-sql-import.herokuapp.com/customers", {
+  fetch("https://csv-to-sql-import.herokuapp.com/customers", {
     method: "DELETE"
   })
     .then((response) => {

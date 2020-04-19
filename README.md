@@ -1,4 +1,4 @@
-# React app to fetch and upadte database table
+# React app for bulk import CSV to MySQL database 
 
 For more details visite :
 > [Application](https://suspicious-carson-2627ba.netlify.app/)
